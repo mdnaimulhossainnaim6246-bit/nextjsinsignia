@@ -1,0 +1,114 @@
+.discoverlanding___BG{
+ background: #e5e7eb;
+}
+
+.discover___overflowX {
+  display: flex;
+  max-width: 100%;
+  margin: 0.8rem auto 2rem auto;
+  padding: 0 1rem;
+  overflow-x: scroll;
+
+ 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+
+.discover___overflowX::-webkit-scrollbar {
+  display: none;
+}
+
+
+.discoverlanding___item___wrapper {
+  animation: fadeInItem 0.5s ease;
+  width: 250px;
+  z-index: 10;
+  margin: 12px;
+  z-index: -5 !important;
+}
+
+
+
+
+/* Swiper container */
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  z-index: 0 !important;
+}
+
+/*  slide fixed width */
+.swiper-slide {
+  /* width: 250px !important; */
+  /* padding-top: 17px !important; */
+  flex-shrink: 0;
+  box-sizing: border-box;
+  pointer-events: auto; 
+}
+
+
+
+/* Active slide */
+.swiper-slide-active {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+
+
+.swiper-pagination {
+  position: relative !important;
+  
+}
+
+
+
+
+
+/* Default: hide arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #2563eb; 
+}
+
+/* Show arrows on hover over Swiper container */
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+/* Optional: arrow size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; 
+  font-weight: bold;
+}
+
+/* Default bullet style */
+.swiper-pagination-bullet {
+  background: #007bff !important;
+  height: 10px !important;
+  width: 10px !important;
+  opacity: 0.5 !important;
+  transition: all 0.3s ease;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #007bff !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+/* Dynamic bullets – */
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-prev {
+  background: #3399ff !important;
+  opacity: 0.8 !important;
+  
+}
+
+

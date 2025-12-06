@@ -1,0 +1,349 @@
+.contact-container-div {
+    padding: 2rem;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+@media (max-width:500px){
+       .contact-container-div {
+       padding: 1rem;
+   }
+   
+   .contact-container { 
+       padding: 1rem; 
+   }
+
+}
+
+.contact-h1-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+  
+}
+@media(max-width:700px){
+    .contact-h1-title {
+    font-size: 2rem;
+  
+}
+}
+.contact-h3-subtitle {
+    color: #e9e7e7;
+    font-size: 16px;
+    font-family: "Ubuntu" ;
+    text-align: center;
+
+}
+
+.contact__whatsapp-link{
+    color:#22a522;
+    display: inline-block;
+}
+.contact__whatsapp-link:hover{
+    color:#0c8626;
+}
+.contact__whatsapp-link:hover .contact__whatsapp-link-span{
+    color:#0c8626;
+    text-decoration: underline;
+}
+
+.contact__email-link{
+    color: #ff8562;
+    display: inline-block;
+}
+.contact__email-link:hover {
+   color: #f76c46;
+ 
+}
+.contact__email-link:hover .contact__email-link-span {
+   color: #f76c46;
+   text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='number'],
+.form-group textarea,
+.form-group .PhoneInput input {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #4a90bd;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    font-size: 13px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group .PhoneInputInput:focus {
+    border-color: #007bff;
+    /* box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); */
+    outline: none;
+}
+
+
+
+.form-group .error {
+    border-color: #dc3545 !important;
+}
+
+/* Contact.css */
+
+.error-border {
+  border: 1.5px solid red !important;
+  border-radius: 4px;
+}
+
+
+
+.error-message {
+    color: #dc3545 !important;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-group fieldset {
+    border: 1px solid #4a90bd;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.form-group fieldset legend {
+    padding: 0 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group fieldset input {
+    margin-right: 0.5rem;
+}
+
+.form-group fieldset label {
+    margin-right: 1.5rem;
+    display: inline !important;
+    font-weight: normal;
+}
+
+
+
+.submit-button {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #2b8dca, #55bde9);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:disabled {
+    background-color: #a0c3e6;
+    cursor: not-allowed;
+}
+
+/* PhoneInput specific styles */
+.PhoneInput {
+    display: flex;
+    align-items: center;
+}
+
+.PhoneInputCountry {
+    margin-right: 10px;
+}
+
+.PhoneInputInput {
+    border: none;
+    flex-grow: 1;
+}
+
+.PhoneInputInput:focus {
+    outline: none;
+}
+
+.profile-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.profile-image-preview-container {
+    position: relative;
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.profile-image-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 3px solid #007bff; */
+    cursor: pointer;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #dfe2e4;
+    color: rgb(2, 2, 2);
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 13px;
+    border: 2px solid #fff;
+    
+}
+
+/* Styles for react-phone-input-2 */
+.react-tel-input .form-control {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 300;
+  color: #333;
+  background-color: #fff;
+}
+span.country-name{
+  color: #111 !important
+}
+
+.selected-flag:focus{
+   border-color: #007bff;
+}
+
+#message{
+    min-height: 100px;
+}
+
+
+
+.css-spxu-control{
+    border:1px solid #4a90bd !important;
+}
+.css-1u9des2-indicatorSeparator{
+    background-color: #4a90bd !important;
+}
+
+.css-tj5bde-Svg{
+    fill: #82a7be !important;
+}
+.css-spxu-control,
+.css-tj5bde-Svg {
+  transition: 0.25s ease;
+}
+
+
+
+.error-border .css-spxu-control,
+.error-border .css-1pahdxg-control {
+  border: 0px solid #dc3545 !important;
+}
+.error-border .css-1u9des2-indicatorSeparator {
+  background-color:  #dc3545 !important;
+}
+
+
+.error-border .css-tj5bde-Svg {
+  fill: #dc3545 !important;
+}
+
+
+.form-control {
+    border: 1px solid #4a90bd !important;
+}
+
+.react-tel-input .flag-dropdown{
+   border: 1px solid #4a90bd !important;
+   background-color: #ffffff !important;
+}
+
+/* Default normal styling (optional, if needed) */
+.react-tel-input .form-control {
+  border: 1px solid #4a90bd !important;
+  transition: 0.25s ease;
+}
+
+/* On Focus (normal mode) */
+.react-tel-input .form-control:focus {
+  border: 1px solid #16608f !important;
+  box-shadow: none !important;
+}
+
+/*  ERROR State → Red Border */
+.error-border .react-tel-input .form-control {
+  border: 0px solid #dc3545 !important;
+  box-shadow: none !important;
+}
+
+/*  ERROR Focus → still red */
+.error-border .react-tel-input .form-control:focus {
+  border: 0px solid #dc3545 !important;
+  box-shadow: none !important;
+}
+/*  ERROR State → Red Border */
+.error-border .flag-dropdown  {
+  border-right: 1px solid #dc3545 !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+}
+
+/*  ERROR Focus → still red */
+.error-border .flag-dropdown :focus {
+  border-right: 1px solid #dc3545 !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  box-shadow: none !important;
+}
+
+

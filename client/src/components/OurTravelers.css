@@ -1,0 +1,33 @@
+
+.about-member-container{
+   
+   margin: auto;
+   padding: 0; 
+   
+}
+/* .about-member-container{
+  padding-top: 2rem !important;
+  padding-bottom: 0 !important;
+  margin: auto !important;
+} */
+
+.discoverinner{
+  background-image: url("/assets/bg.landing.jpg" );
+}
+/* .section__header {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: var(--header-font);
+  text-align: center;
+  color: var(--Font-Header-color);
+} */
+
+
+@media (max-width: 768px) {
+  .sectioninner__container{
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+}

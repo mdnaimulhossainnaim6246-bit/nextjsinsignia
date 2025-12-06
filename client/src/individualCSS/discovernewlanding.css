@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.discoverlanding-outer-div{
+    background: #fff;
+}
+.discoverlanding-section{
+     padding: 2rem 4rem;
+     max-width: 1400px;
+     margin: 0 auto;
+    
+}
+.discoverlanding-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width:950px){
+    .discoverlanding-section{
+     padding: 2rem 2rem;
+     max-width: 1400px;
+     margin: 0 auto;
+    
+}
+   .discoverlanding-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+} 
+}
+
+
+.destination-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.destination-image-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.destination-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s !important;
+}
+
+
+.destination-card:hover .destination-image {
+    transform: scale(1.05) !important;
+}
+
+.destination-card:hover .google-map-icon{
+    transform: scale(1.1);
+}
+
+.google-map-label {
+    background: #f0eeee;
+    border: 1px solid #444;
+    font-size: 12px;
+    padding: 1px 4px;
+    line-height: 1.2;
+    margin-left: 5px;
+    opacity: 0;             
+    pointer-events: none;  
+    transform: translateY(-2px);
+    color: #333;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.google-map-icon-div:hover .google-map-label {
+    opacity: 1;            
+    transform: translateY(0); 
+}
+
+/* .google-map-icon-div{
+    background-color: rgba(74, 144, 189,0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.342);
+   
+} */
+
+.destination-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, rgb(74, 144, 189), #5eb3d6);
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.destination-content {
+    padding: 2.5rem;
+}
+
+.destination-title {
+    font-size: 1.65rem !important;
+    font-weight: 500;
+    color: #2c5282;
+    margin-bottom: 0.9rem !important;
+    display: inline-block; 
+    font-family: "Outfit";
+    white-space: nowrap;  
+    overflow: hidden;      
+    text-overflow: ellipsis;
+    max-width: 16ch; 
+}
+
+
+.destination-rating {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    /* color: #FFD700; */
+    margin-left: 10px;
+    white-space: nowrap;  
+    /* overflow: hidden;     
+    text-overflow: ellipsis;  */
+    padding-bottom: 5px;
+}
+
+
+.destination-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem !important;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    font-family: "inter";
+}
+
+.destination-description {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1rem !important;
+    font-family: "inter";
+    font-size: 14px;
+    
+    display: -webkit-box;      
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 100%;
+   
+    -webkit-line-clamp: 5;  
+}
+
+.destination-highlights {
+    margin-bottom: 1.5rem;
+}
+
+.highlights-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c5282;
+    margin-bottom: 0.8rem;
+}
+
+.highlights-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+}
+
+.highlight-item {
+    color: #718096;
+    font-size: 14px !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "inter";
+}
+
+.highlight-item::before {
+    content: '✓';
+    color: #5eb3d6;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2.3rem;
+    background: linear-gradient(135deg, #4a90bd, #5eb3d6);
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 400;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(74, 144, 189, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(74, 144, 189, 0.4);
+}
+

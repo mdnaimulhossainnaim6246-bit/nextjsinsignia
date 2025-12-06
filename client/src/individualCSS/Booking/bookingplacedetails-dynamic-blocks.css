@@ -1,0 +1,114 @@
+/* client/src/individualCSS/Booking/bookingplacedetails-dynamic-blocks.css */
+
+/* General Block Styling */
+.bp-dynamic-block {
+    margin-bottom: 2rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.bp-dynamic-block-subtitle {
+    font-size: 1.5rem; /* Wikipedia-like section heading */
+    font-weight: 600;
+    color: #202122;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #a2a9b1;
+    text-align: left;
+}
+
+.bp-dynamic-block-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #202122;
+}
+
+/* Block Type 1: Content Block (Wikipedia Style) */
+.bp-block-type-1 {
+    width: 100%;
+    overflow: auto; /* Clearfix for floated image */
+}
+
+.bp-block-type-1 .bp-dynamic-block-image {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin: 0.5rem 0 1rem 1.5rem;
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    background-color: #f8f9fa;
+}
+
+.bp-block-type-1 .bp-dynamic-block-content {
+    text-align: justify;
+}
+
+/* Block Type 2: 3D Inverted Border Block */
+.bp-block-type-2 {
+    max-width: 75%;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to bottom right, #a2a9b1, #f8f9fa);
+    position: relative;
+    background-color: var(--block-theme-color, transparent);
+}
+
+/* .bp-block-type-2::before {
+    content: '';
+    position: absolute;
+    top: -4px; right: -4px; bottom: -4px; left: -4px;
+    background: linear-gradient(to top left, #a2a9b1, #f8f9fa);
+    z-index: -1;
+    filter: blur(5px);
+} */
+
+.bp-block-type-2 .bp-dynamic-block-subtitle {
+    color: #0645ad; /* Wikipedia link color */
+    text-align: center;
+    font-size: 1.8rem;
+    border-bottom: none;
+}
+
+.bp-block-type-2 .bp-dynamic-block-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Block Type 3: Links Block */
+.bp-block-type-3 {
+    max-width: 75%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 4px;
+    background-color: var(--block-theme-color, transparent);
+    border: 1px solid #e0e0e0;
+}
+
+.bp-block-type-3 .bp-dynamic-block-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bp-block-type-3 .bp-dynamic-block-content li {
+    margin-bottom: 0.5rem;
+}
+
+.bp-block-type-3 .bp-dynamic-block-content a {
+    color: #0645ad;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bp-block-type-3 .bp-dynamic-block-content a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,255 @@
+.our-travelers-landing {
+  padding: 2rem;
+  background-color: #fff;
+}
+.our-travelers-inner {
+  padding: 0rem;
+  background-color: #fff;
+}
+
+.ourtravelers-main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  color: #333;
+  font-family: "lisu bosa";
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+.ourtravelers-main-sub {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2.5rem;
+  color: #333;
+  font-family: "lisu bosa";
+}
+
+.ourtravelers-inner-main-ti-sub{
+
+  background: linear-gradient(135deg, rgb(44, 82, 130) 0%, rgb(74, 144, 189) 100%);
+  padding: 3rem 6%;
+}
+.ourtravelers-inner-main-title{
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  
+}
+.ourtravelers-inner-main-sub{
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+ 
+}
+
+.ourtravelers-travelers-container {
+  display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.ourtravelers-travelers-inner-container {
+  display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.ourtravelers-traveler-card {
+  /* background-color: #fff; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* .traveler-card:hover {
+  transform: translateY(-5px);
+} */
+
+.ourtravelers-thumbnail-container {
+  position: relative;
+  width: 100%;
+  height:250px;
+}
+
+.ourtravelers-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+.ourtravelers-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* .thumbnail-container:hover .overlay {
+  opacity: 1;
+} */
+
+.ourtravelers-description {
+  color: #ececec !important;
+  padding: 1rem;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+  z-index: 1;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.ourtravelers-profile-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.ourtravelers-profile-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: -125px auto 0;
+  border: 4px solid #fff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  z-index: 2;
+  position: relative;
+}
+
+.ourtravelers-traveler-name {
+  font-size: 1.2rem;
+  margin: 0rem;
+  color: #2c5282;
+  font-family: "Abuntu";
+  font-weight: 600;
+  
+}
+
+.ourtravelers-traveler-subtitle {
+  font-size: 13px;
+  color: #022241;
+  margin-bottom: 0.5rem;
+}
+
+.ourtravelers-social-links {
+  margin-top: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 8px;
+  
+}
+
+.ourtravelers-link-div{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.ourtravelers-link-co-name{
+  color: #777;
+  line-height: 0.1;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.ourtravelers-social-links span {
+  display: block;
+  margin: 0.5rem 0;
+  color: #ff8562;
+  padding-left: 5px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.ourtravelers-social-links a:hover {
+  color: #0056b3;
+}
+
+.ourtravelers-show-more-btn {
+    display: block;
+    margin: 2rem auto 0 auto;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #2b8dca, #55bde9);
+    box-shadow: 0 4px 15px rgba(74, 144, 189, 0.3);
+    border-radius: 50px !important;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Inter Tight", sans-serif;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    max-width: 120px;
+}
+
+.ourtravelers-show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media (max-width: 1250px) {
+ 
+.ourtravelers-travelers-container {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 2rem;
+}
+.ourtravelers-travelers-inner-container {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 2rem;
+}
+
+.ourtravelers-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+}
+@media (max-width: 780px) {
+ 
+.ourtravelers-travelers-inner-container {
+ display: grid;
+ grid-template-columns: repeat(1, minmax(0, 1fr));
+ gap: 2rem;
+}
+.ourtravelers-travelers-container {
+ display: grid;
+ grid-template-columns: repeat(1, minmax(0, 1fr));
+ gap: 2rem;
+}
+
+.ourtravelers-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.ourtravelers-inner-main-title{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+}

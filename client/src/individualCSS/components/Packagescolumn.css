@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+.category-section {
+  margin-bottom: 3rem;
+}
+.category-header-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.category-title-column {
+  font-size: 19px;
+  font-weight: 700;
+  color: #222;
+  padding-bottom: 0rem;
+  /* border-bottom: 2px solid #afacac; */
+  border: none;
+  font-family:   "Raleway";
+  font-style: italic;
+  line-height: 1.1;
+  margin-left: 0.4rem;
+}
+.view-all-btn-column {
+  /* background-color: #2563eb; */
+  color: rgb(4, 116, 245);
+  text-decoration: underline;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  
+}
+.view-all-btn-column:hover {
+  color: #1d4ed8;
+}
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f1f1f1;
+}
+.horizontal-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.horizontal-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.horizontal-scroll-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.discover___item___wrapper {
+  margin-right: 1rem;
+  flex-shrink: 0;
+}

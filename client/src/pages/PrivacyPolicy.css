@@ -1,0 +1,90 @@
+.privacy-container {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+}
+
+.praivacy-title-sub-div{
+  background: linear-gradient(135deg, rgb(44, 82, 130) 0%, rgb(74, 144, 189) 100%);
+  padding: 3rem 6%;
+}
+.privacy-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.privacy--sub{
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  font-family:"poppins" ;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+  .privacy-title {
+    color: #fff;
+    font-size: 2rem;
+  
+}
+}
+
+.praivacy-main-data-container{
+  max-width: 900px;
+  margin: 0rem auto;
+  padding: 2.5rem 1.3rem;
+}
+
+.privacy-date {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.privacy-section {
+  margin-bottom: 1.8rem;
+}
+
+.privacy-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c5282; 
+  margin-bottom: 0.8rem;
+}
+
+.privacy-section p {
+  font-size: 15px;
+  margin-bottom: 0.8rem;
+}
+
+.privacy-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.privacy-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+.praivacy-contact{
+    color: #fff;
+    background: linear-gradient(135deg, #2b8dca, #55bde9);
+    padding: 10px 16px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+
+}

@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* client/src/individualCSS/Packages/packageslist.css */
+
+.package-card-landing {
+  background: #fff;
+  border-radius: 12px; /* Smaller border radius */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+ 
+  
+}
+
+.package-card{
+   background: #fff;
+  border-radius: 12px; /* Smaller border radius */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card:hover {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.package-card-image-container {
+  position: relative;
+  width: 100%;
+  height: 180px; 
+  z-index: 999999;
+  
+}
+
+.package-card-image {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+    z-index: 9;
+}
+
+.package-card-discount-badge {
+  position: absolute;
+  font-size: 18px;
+  line-height:1.2;
+  top: 0px !important;
+  /* background: #ff4756f3; */
+  background: linear-gradient(135deg, #fa2537f5, #ff5100d2);
+  color: #f8f7f7;
+  font-weight: 600;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  left: 0px;
+  text-align: center;
+  padding: 8px 8px 17px 8px;
+  clip-path: polygon(100% 52%, 100% 77%, 0 100%, 0 0, 100% 0, 100% 36%);
+ 
+  /* border-radius: 40px; */
+  
+}
+
+.package-inner-card-discount-badge{
+  position: absolute;
+  top: 17px;
+  left: 30px;
+  background: #fceb55;
+  color: #222;
+  padding: 20px 0px;
+  width: 110px;
+  height: 130px;
+  text-align: center;
+  border-radius: 0px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  z-index: 9;
+  
+}
+
+.Flat-discount{
+  font-family: "Sansation";
+  font-weight: 550;
+  font-size: 1.7rem;
+  line-height: 0.8;
+}
+.offer-text-off{
+  font-family: "saira";
+  font-weight: 550;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+
+.offer-badge-one-div{
+  top: -14px;
+  position: absolute ;
+  z-index: 3;
+}
+
+.offer-badge-one{
+  background-color: #ff0095;
+  width: 284px;
+  position: relative ;
+  font-size: 1.8rem;
+  font-family: "saira";
+  /* clip-path: polygon(1% 2%, 100% 1%, 81% 100%, 1% 99%); */
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+  height: 58px;
+  left: 15px;
+  text-align: end;
+  padding-right: 36px;
+  padding-top: 11px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  z-index: 1;
+  
+}
+
+.package-card-discount-badge-shadow{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #141414;
+  top: 18px;
+  left: 140px;
+  clip-path: polygon(0 0, 56% 100%, 0 100%);
+
+}
+
+
+.offer-badge-one-span{
+  background-color: #3b0e5f;
+  width: 285px;
+  position: relative ;
+  top: 95px;
+  font-size: 1.2rem;
+  font-family: "saira";
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+  height: 58px;
+  left: 22px;
+  text-align: end;
+  padding-right: 35px;
+  padding-top: 21px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  z-index: 1;
+}
+
+.package-card-content {
+  padding: 0.1rem 0.5rem 0.2rem 0.5rem; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.package-card-location-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0rem; /* Further reduced margin */
+}
+
+/* .package-card-location {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+} */
+
+.package-card-location i {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+.package-card-rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffd207;
+  
+}
+
+.package-card-rating .star-icon {
+  margin-right: 3px;
+  font-size: 1rem;
+}
+
+.package-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  color: #333;
+  line-height: 1.1;
+  padding: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.package-card-title i {
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  margin: 0 !important;
+}
+
+/* .package-card-title:hover i {
+  transform: translateY(2px);
+} */
+
+/* ✅ rotate icon when popup open */
+.rotate-up {
+  transform: rotate(-180deg);
+}
+
+/* ✅ Popup style for full title */
+.title-popup {
+  position: absolute;
+  
+  top: 42%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  color: #111;
+  padding: 0.2rem 0.2rem;
+  border-radius: 6px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  animation: fadeIn 0.2s ease;
+}
+
+/* optional fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -48%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.title-popup:hover {
+  background: #f5f5f5;
+}
+
+
+.package-card-description {
+  font-size: 0.8rem; /* Further reduced font size */
+  color: #666;
+  line-height: 1.5; /* Further reduced line height */
+  margin-bottom: 0.4rem !important; /* Further reduced margin */
+  flex-grow: 1;
+  min-height: 100px;
+  
+}
+
+.package-card-locations{
+  margin-bottom: 0.3rem;
+}
+
+.package-card-locations a.package-card-location-link {
+  color: #555 !important;   
+  /* color: #202122 !important;    */
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 13px;
+  background:#f0f0f0 ;
+  /* background:#eaecf0 ; */
+  padding: 1px 6px;
+
+  
+}
+
+.package-card-locations span.package-card-location-name {
+  color: #555 !important;
+}
+
+.package-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0rem; 
+  padding-top: 0.2rem; 
+
+}
+
+.package-card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.package-card-latest-price-inner {
+  font-size: 16px; 
+  font-weight: 600;
+  /* color: #007bff; */
+  color: #4a90bd;
+  margin-right: 0.3rem;
+}
+
+.package-card-old-price-inner {
+ 
+  font-size: 13px;
+  font-weight: 500;
+  color: #bd0f0f !important; 
+  text-decoration: line-through;
+  
+}
+
+
+
+
+.package-card-duration {
+  font-size: 0.8rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.package-card-duration i {
+  margin-right: 5px;
+  color: #4a90bd;
+}
+
+
+.package-card-button-div{
+  display: flex;
+  justify-content: right;
+}
+.package-card-button {
+  display: block;
+  width: 60%;
+  text-align: center;
+  padding: 0.4rem; /* Further reduced padding */
+  /* background: #007bff; */
+  background: linear-gradient(135deg, #4a90bd, #5eb3d6);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px 0px 12px 0px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 14px; 
+  cursor: pointer;
+}
+
+.package-card-button:hover {
+   background: linear-gradient(135deg, #4a99ca, #4eb0da);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+}
+
+
+
+
+/* ---- Base / Typography ---- */
+.ck-content {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+.ck-content h1,
+.ck-content h2,
+.ck-content h3,
+.ck-content h4 {
+  font-weight: 600;
+  margin: 1.2em 0 0.5em;
+  line-height: 1.25;
+  color: #111;
+}
+.ck-content h1 { font-size: 1.8rem; }
+.ck-content h2 { font-size: 1.45rem; }
+.ck-content h3 { font-size: 1.15rem; }
+
+/* Paragraphs */
+.ck-content p { margin: 0 0 1rem; }
+
+/* Links */
+.ck-content a {
+  color: #0b66ff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(11,102,255,0.12);
+  transition: border-color .12s ease, color .12s ease;
+}
+.ck-content a:hover { border-color: rgba(11,102,255,0.28); color: #084ed6; }
+
+/* Images - responsive and center */
+.ck-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.9rem auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+}
+
+/* Figure / caption */
+.ck-content figure { margin: 1rem 0; text-align: center; }
+.ck-content figcaption {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.4rem;
+}
+
+/* Lists */
+.ck-content ul,
+.ck-content ol {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+}
+.ck-content li { margin: 0.35rem 0; }
+
+/* Blockquote - subtle */
+.ck-content blockquote {
+  border-left: 3px solid rgba(11,102,255,0.12);
+  margin: 0.8rem 0;
+  padding: 0.55rem 0.9rem;
+  color: #374151;
+  background: rgba(11,102,255,0.02);
+  border-radius: 6px;
+}
+
+/* Code blocks and inline code */
+.ck-content pre {
+  background: #0f1724;
+  color: #e6eef8;
+  padding: 0.9rem;
+  border-radius: 8px;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 0.92rem;
+}
+.ck-content code {
+  background: rgba(15,23,36,0.06);
+  padding: 0.12rem 0.36rem;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 0.9rem;
+}
+
+/* Tables */
+.ck-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8rem 0;
+  text-align: left;
+  
+}
+.ck-content th,
+.ck-content td {
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid rgba(15,23,36,0.06);
+}
+.ck-content thead th {
+  background: rgba(15,23,36,0.02);
+  font-weight: 600;
+}
+
+/* Buttons inside content (styled links) */
+.ck-content a.button {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(11,102,255,0.12);
+  background: rgba(11,102,255,0.06);
+  transition: transform .06s ease, box-shadow .08s ease;
+}
+.ck-content a.button:active { transform: translateY(1px); }
+
+/* Utility: keep big margins from breaking layout */
+.ck-content > *:first-child { margin-top: 0; }
+.ck-content > *:last-child { margin-bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+

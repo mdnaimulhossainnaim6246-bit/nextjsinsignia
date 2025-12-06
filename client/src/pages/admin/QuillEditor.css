@@ -1,0 +1,90 @@
+.ql-editor {
+  color: black;
+  height: auto;
+}
+
+.ql-editor.ql-blank::before {
+  color: #a9a9a9;
+  font-style: normal;
+}
+
+
+
+.ql_editor {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  min-height: 100px;
+  word-break: break-word;
+  margin: 0 !important;
+}
+
+.ql_editor p {
+  margin: 0 0 8px 0;
+}
+
+.ql_editor h1 { font-size: 1.5em; font-weight: 600; }
+.ql_editor h2 { font-size: 1.3em; font-weight: 600; }
+.ql_editor h3 { font-size: 1.1em; font-weight: 600; }
+.ql_editor h4 { font-size: 0.9em; font-weight: 600; margin: 0;padding: 0; }
+.ql_editor h5 { font-size: 0.8em; }
+.ql_editor h6 { font-size: 0.7em ; }
+
+.ql_editor ul,
+.ql_editor ol {
+  padding-left: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.ql_editor li {
+  margin-bottom: 0.4em;
+}
+
+.ql_editor a {
+  color: #3366cc;
+  text-decoration: underline;
+}
+
+.ql_editor blockquote {
+  border-left: 4px solid #999;
+  padding-left: 1em;
+  color: #555;
+  font-style: italic;
+  margin: 1em 0;
+}
+
+.ql_editor table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.ql_editor th,
+.ql_editor td {
+  border: 1px solid #444;
+  padding: 6px;
+}
+
+.ql_editor pre {
+  background-color: #2e2e2e;
+  color: #eaeaea;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: monospace;
+  margin: 1em 0;
+}
+
+.ql_editor img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.ql_editor video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+

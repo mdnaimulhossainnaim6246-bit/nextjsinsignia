@@ -1,0 +1,191 @@
+/* discoverplace-gallery.css */
+
+.discover-gallery-container {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.discover-gallery-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.discover-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.discover-gallery-image-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-gallery-image-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.discover-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pdf-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: #2b8dca;
+  /* background-color: #c81e1e; */
+  color: white;
+  padding: 7px 11px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-left: 4px;
+
+}
+
+.pdf-download-btn:hover {
+  background-color: #1357af;
+  /* background-color: #a01818; */
+}
+
+.pdf-download-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.pdf-download-btn .fa-file-pdf {
+  font-size: 1.2em;
+}
+
+/* Lightbox / Modal Styles */
+.gallery-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.gallery-modal-overlay.fullscreen-mode {
+  background-color: #000;
+}
+
+.gallery-modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-modal-image {
+  max-width: 90%;
+  min-width: auto;
+  max-height: 100vh;
+  min-height: auto;
+  display: block;
+  border-radius: 0;
+  margin: 0 auto;
+}
+@media (max-width:650px) {
+  .gallery-modal-image {
+  max-width: 100%;
+}
+}
+
+
+.discover-lightbox-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  /* background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent); */
+  background: #0000006b;
+  color: white;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+}
+
+.lightbox-counter {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lightbox-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.lightbox-action-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-action-btn:hover {
+  transform: scale(1.15);
+}
+
+.lightbox-prev, .lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1001;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.lightbox-prev:hover, .lightbox-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+

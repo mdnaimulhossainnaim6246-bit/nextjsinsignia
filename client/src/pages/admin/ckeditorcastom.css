@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+========
+ck editor
+======== */
+
+/* 
+========
+ck editor
+======== */
+/* Editor container border & padding */
+.ck-editor__editable_inline {
+  min-height: 300px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #111;
+}
+
+/* Toolbar customization */
+.ck-toolbar {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Heading styles inside CKEditor */
+.ck-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #111;
+  
+}
+.ck-content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #111;
+}
+
+.ck-content h3 {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #111;
+ 
+}
+.ck-content h4 {
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #111;
+  
+}
+
+
+
+
+/* Paragraph spacing */
+.ck-content p {
+ 
+  color: #222;
+  font-size: 14px;
+}
+.ck-content a {
+  color: #3366cc;
+}
+.ck-content a:hover {
+  color: #6a60b0;
+  text-decoration: underline;
+}
+
+/* Table styling */
+.ck-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.ck-content table,
+.ck-content th,
+.ck-content td {
+ border: 1px solid #111;
+  padding: 6px 6px !important;
+  vertical-align: middle;
+  text-transform: none !important;
+  font-size: 14px !important;
+  color: #000;
+  font-family: "Lisu Bosa";
+}
+
+
+
+.ck-content td:hover {
+  background-color: #eef6ff;
+}
+
+/* Image styles inside editor */
+.ck-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Selected image highlight */
+.ck-content img.ck-widget_selected {
+  outline: 3px solid #3b82f6; /* Blue border when selected */
+  outline-offset: 2px;
+}
+
+/* Link color */
+.ck-editor__editable_inline a {
+  color: #1d4ed8 !important;
+  text-decoration: underline;
+  font-size: 12px !important;
+}
+
+
+.discoverplace-summary-cqeditor strong,
+.discoverplace-summary-cqeditor b {
+  font-weight: 700;
+  font-family: inherit;
+  color: inherit;
+  font-size: 14px !important;
+}

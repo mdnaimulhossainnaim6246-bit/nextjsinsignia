@@ -1,0 +1,382 @@
+/* client/src/individualCSS/Discover/dynamic-blocks.css */
+
+/* General Block Styling */
+.dynamic-block {
+    margin-bottom: 2.5rem !important;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
+}
+
+.dynamic-block .block-type-1 .dynamic-block-title-des-div {
+    padding: 0rem;
+}
+.dynamic-block .block-type-2 .dynamic-block-title-des-div {
+    padding: 1rem;
+}
+.dynamic-block .block-type-3 .dynamic-block-title-des-div {
+    padding: 0rem;
+}
+
+
+
+@media (max-width:480px){
+    .dynamic-block .block-type-3 .dynamic-block-title-des-div {
+    padding: 0.5rem 0 ;
+}
+
+.dynamic-block .dynamic-block-title-des-div {
+    padding: 0.5rem 1.3rem;
+}
+
+.ql-editor {
+    padding: 0 !important;
+}
+
+}
+
+
+
+/* title style */
+
+.block-type-1 .dynamic-block-subtitle-outer{
+    display: none;
+}
+.block-type-3 .dynamic-block-subtitle-outer{
+    font-size: 1.6rem !important; 
+    font-weight: 700 !important;
+    font-family: "Poppins";
+    color: #2b8dca !important;
+    margin-bottom:0rem !important;
+    margin-top: 1rem;
+    padding-bottom: 0rem !important;
+    border-bottom: 3px solid #4a90bd ;
+    text-align: left ;
+    line-height: 1.3;
+    display: inline-block ;
+}
+.block-type-3 .dynamic-block-subtitle-top{
+    display: none;
+}
+
+.block-type-1 .dynamic-block-subtitle-top-div {
+    display: block;
+    margin-bottom: 1.3rem;
+    margin-top: 3rem;
+}
+
+.block-type-1 .dynamic-block-subtitle-top-div .dynamic-block-subtitle-top {
+    font-size: 1.6rem !important; 
+    font-weight: 700 !important;
+    font-family: "Poppins";
+    color: #2b8dca !important;
+    margin-bottom:0.4rem !important;
+    margin-top: 0.4rem;
+    padding-bottom: 0rem !important;
+    border-bottom: 3px solid #4a90bd ;
+    text-align: left ;
+    line-height: 1.3;
+    display: inline;
+    
+
+}
+
+.block-type-1 .dynamic-block-subtitle-bottom{
+    display: none;
+}
+.block-type-2 .dynamic-block-subtitle-top {
+    font-size: 1.5rem !important; 
+    font-weight: 800 !important;
+    font-family: "lisu bosa";
+    font-style: italic !important;
+    color: #141414 !important;
+    margin-bottom:1rem !important;
+    margin-top: 1rem;
+    padding-bottom: 0rem !important;
+    text-align: center ;
+    line-height: 1.4;
+    text-align: center;
+
+}
+
+.block-type-2 .dynamic-block-subtitle-bottom{
+    display: none;
+}
+.block-type-3 .dynamic-block-subtitle-bottom{
+    display: none;
+}
+.block-type-2 .dynamic-block-subtitle-top{
+    display: none;
+}
+.block-type-2 .dynamic-block-subtitle-outer{
+    font-size: 1.1rem !important; 
+    font-weight: 600 !important;
+    font-family: "poppins";
+    color: #198dd4 !important;
+    margin-bottom:0.5rem !important;
+    margin-top: 1.3rem;
+    padding-bottom: 0rem !important;
+    text-align: left ;
+    line-height: 1.3;
+    display: inline-block ;
+}
+@media (max-width:768px){
+    .block-type-1 .dynamic-block-subtitle-bottom {
+    font-size: 1.8rem !important; 
+    font-weight: 900 !important;
+    font-family: "lisu bosa";
+    font-style: italic !important;
+    background: linear-gradient(135deg, #2c5282, #4a90bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom:1rem !important;
+    margin-top: 0.4rem;
+    padding-bottom: 0rem !important;
+    border-bottom: 3px solid ;
+    border-image: linear-gradient(135deg, #2c5282, #4a90bd) 1;
+    text-align: left ;
+    line-height: 1.3;
+    display: inline-block ;
+}
+.block-type-1 .dynamic-block-subtitle-top{
+    display: none !important;
+}
+}
+
+
+@media(max-width:480px){
+    .block-type-3 .dynamic-block-subtitle-outer{
+    margin-left: 1rem;
+    margin-bottom: 0.9rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    font-family: "lisu bosa";
+}
+    .block-type-2 .dynamic-block-subtitle-outer{
+    margin-left: 1rem;
+    margin-bottom: 0.9rem !important;
+    font-size: 1.1rem !important; 
+    font-weight: 600 !important;
+    font-family: "poppins";
+    margin-bottom:0.5rem !important;
+    margin-top: 3rem;
+ }
+    
+   .block-type-1 .dynamic-block-subtitle-bottom {
+    margin-left: 1.3rem;
+  } 
+    
+
+
+  /* ............... */
+
+  .block-type-1 .dynamic-block-content {
+    padding: 0 1.3rem;
+}
+   
+
+}
+
+
+
+
+
+
+.dynamic-block-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #202122;
+}
+.block-type-3 .dynamic-block-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #202122;
+    margin-top: 1rem !important;
+    margin-bottom: 2.5rem !important;
+}
+
+/* Block Type 1: Content Block (Wikipedia Style) */
+.block-type-1 {
+    width: 100%;
+    /* overflow: auto;  */
+}
+
+.block-type-1 .dynamic-block-image {
+    width: 300px;
+    height: auto;
+    float: right;
+    /* margin: 0.5rem 0 0rem 1rem; */
+    /* border: 1px solid #c8ccd1; */
+    padding: 3px;
+    background-color: #f8f9fa;
+    border-radius: 0;
+    margin: 0;
+   
+   
+}
+
+.block-type-1 .dynamic-block-div{
+  position: relative;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #c8ccd1;
+   margin: 0.5rem 0 0rem 1rem;
+   z-index: 2;
+   background: #fff;
+ }
+ .block-type-1 .discover__image-alt-text{
+  text-align: center;
+  font-family:"Ubuntu" ;
+  color: #444;
+  font-size: 14px ;
+  font-style: italic;
+ }
+ .block-type-2 .discover__image-alt-text{
+  display: none;
+ }
+
+@media (max-width: 768px){
+  .block-type-1 .dynamic-block-image{
+    min-width: 100%;
+    float: none;
+    height: 100%;
+    margin: 1rem auto 0 auto;
+    position: relative;
+    padding: 0px;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+  }
+  .block-type-1 .dynamic-block-div{
+  float: none;
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  min-height: auto;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  margin: 0.5rem 0rem 0rem 0rem;
+   
+ }
+
+ .block-type-1 .discover__image-alt-text{
+  text-align: center;
+  font-family:"Outfit" ;
+  color: #161f2c;
+  font-size: 12px !important ;
+  font-style: normal;
+  padding-top: 0.75rem;
+ }
+}
+
+.block-type-1 .dynamic-block-content {
+    text-align: justify;
+}
+
+
+/* Block Type 2: 3D Inverted Border Block */
+.block-type-2 {
+    max-width: 100%;
+    margin: 0  auto;
+    padding: 0rem;
+    /* border: 2px solid; */
+    border-image-slice: 1;
+    border-width: 2px;
+    position: relative;
+    background: var(--block-theme-color, transparent);
+    border: none;
+}
+
+@media (max-width:600px){
+    .block-type-2 {
+         padding: 0;
+         max-width: 100%;
+    }
+
+}
+
+/* .block-type-2::before {
+    content: '';
+    position: absolute;
+    top: -4px; right: -4px; bottom: -4px; left: -4px;
+    background: linear-gradient(to top left, #a2a9b1, #f8f9fa);
+    z-index: -1;
+    filter: blur(5px);
+} */
+
+.block-type-2 .dynamic-block-subtitle {
+    color: #111; 
+    text-align: center;
+    font-size: 25px !important;
+    border-bottom: none;
+}
+
+.block-type-2 .dynamic-block-image {
+    float: left;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 1.2rem 10px 5px 1.2rem;
+    border: 2px solid #fff;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.15); */
+}
+
+@media (max-width:500px){
+    .block-type-2 .dynamic-block-div {
+        justify-content: center;
+        display: flex;
+    }
+    .block-type-2 .dynamic-block-div .dynamic-block-image {
+    float: none;
+    }
+    .block-type-2 .dynamic-block-title-des-div{
+       padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+    }
+    
+}
+
+
+
+.block-type-3 .dynamic-block-content {
+    padding: 1.3rem;
+}
+
+.block-type-3 {
+    max-width: 100%;    
+    padding: 0rem;
+    border-radius: 0px;
+    background: var(--block-theme-color, transparent);
+    /* border: 1px solid #e0e0e0; */
+}
+
+@media(max-width:600px){
+
+    .block-type-3 {
+    padding: 0rem;
+    }
+}
+
+.block-type-3 .dynamic-block-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.block-type-3 .dynamic-block-content li {
+    margin-bottom: 0.5rem;
+}
+
+.block-type-3 .dynamic-block-content a {
+    color: #0645ad;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.block-type-3 .dynamic-block-content a:hover {
+    text-decoration: underline;
+}

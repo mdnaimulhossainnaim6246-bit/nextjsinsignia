@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.guide-section {
+    padding: 0;
+    background: #fff;
+    min-height: 100vh;
+}
+.guide---inner---title{
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+.guide---inner---sub{
+    font-size: 14px;
+    color: #eee;
+    margin: 0;
+    text-align: center;
+}
+.guide-section-landing {
+    padding: 2rem;
+    background: #fff;
+    min-height: auto;
+}
+
+.guide-grid {
+    /* padding: 2rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 0.2rem;
+}
+
+.guide-card {
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    /* cursor: pointer; */
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+}
+
+.guide-card-image-container {
+    position: relative;
+    
+}
+
+.guide-card-image {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    aspect-ratio: 16/8;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.guide-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.guide-card:hover .guide-card-overlay {
+    opacity: 1;
+}
+
+.guide-card-overlay h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    /* cursor: pointer; */
+}
+
+.guide-card-content {
+    padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.guide-card-title {
+   font-family: 'Lisu Bosa', serif;
+   font-size: 1.5rem;
+   margin-bottom: 0.4rem;
+   font-weight: 400;
+   color: #444;
+   /* font-style: italic; */
+   cursor: pointer;
+}
+
+@media(max-width:768px){
+.guide-card-title {
+  
+  font-size: 1.3rem;
+ 
+}
+}
+
+.guide-card-description {
+    font-family: 'inter',-apple-system, system-ui,  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    font-size:14px;
+    line-height: 1.4;
+    /* margin-bottom: 0.5rem; */
+    font-weight: 400;
+}
+
+.guide-card-see-details{
+    cursor: pointer;
+    color: #4a90bd;
+    font-size: 15px;
+    font-family: "inter";
+    font-style: italic;
+    cursor: pointer;
+}
+.guide-card-see-details:hover{
+    color: #1f7cb6;
+    text-decoration: underline;
+}
+
+.guide-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guide-inner-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 4rem 0 4rem;
+    
+}
+
+.guide-card-author,
+.guide-card-date {
+    font-size: 0.8rem;
+      color: #4a90bd;
+    
+}
+
+.guide-card-author i,
+.guide-card-date i {
+    margin-right: 0.3rem;
+}
+
+.guide-count {
+  font-size: 0.95rem;
+  color: #55bde9;
+}
+
+.guide-show-more-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #2b8dca, #55bde9);
+    box-shadow: 0 4px 15px rgba(74, 144, 189, 0.3);
+    border-radius: 50px !important;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Inter Tight", sans-serif;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.guide-show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.guide-loadmore-text {
+  background: linear-gradient(135deg, #2b8dca, #55bde9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-clip: text;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.guide-loadmore-text:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+
+.guide-loadmore-text:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1250px) {
+    .guide-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .guide-inner-footer{
+    margin: 18px 1rem 0 1rem;
+}
+
+.guide---inner---title{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+}

@@ -1,0 +1,140 @@
+/* ListCartOrders.css */
+
+.list-cart-orders-page {
+  background: linear-gradient(to right, #232526, #414345);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.list-cart-orders-page h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.order-summary {
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  gap: 0.8rem;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.summary-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.summary-card i {
+  font-size: 2.5rem;
+}
+
+.summary-card:nth-child(1) i { color: #17a2b8; }
+.summary-card:nth-child(2) i { color: #ffc107; }
+.summary-card:nth-child(3) i { color: #28a745; }
+.summary-card:nth-child(4) i { color: #007bff; }
+.summary-card:nth-child(5) i { color: #dc3545; }
+.summary-card:nth-child(6) i { color: #6f42c1; }
+
+.summary-card div p {
+  margin: 0;
+  font-size: 1rem;
+  color: #eee;
+}
+
+.summary-card div span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.table-order {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-order th,
+.table-order td {
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-order th {
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.table-order tbody tr {
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: calc(var(--i) * 100ms);
+}
+
+.table-order tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.table-order select {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table-order button {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.table-order button:nth-child(1) {
+  background: #007bff;
+  color: #fff;
+}
+
+.table-order button:nth-child(1):hover {
+  background: #0056b3;
+}
+
+.table-order button:nth-child(2) {
+  background: #dc3545;
+  color: #fff;
+}
+
+.table-order button:nth-child(2):hover {
+  background: #c82333;
+}
+

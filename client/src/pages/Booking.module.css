@@ -1,0 +1,396 @@
+:root {
+    --boo-primary-color: #2c5282;
+    --boo-secondary-color: #4a90bd;
+    --boo-text-color: #4a5568;
+    --boo-background-color: #f7fafc;
+    --boo-white-color: #fff;
+    --boo-error-color: #ef4444;
+    --boo-border-color: #e2e8f0;
+    --boo-input-bg-color: #fff;
+}
+
+.bookingContainerDiv {
+    padding: 1rem;
+    background: var(--boo-background-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.bookingContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--boo-white-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bookingHeader {
+    background: linear-gradient(135deg, var(--boo-primary-color) 0%, var(--boo-secondary-color) 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.bookingH1Title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--boo-white-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.bookingH3Subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #e2e8f0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.infoSection {
+    background: #eef2f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.infoSection h2 {
+    /* color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem; */
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(74, 144, 189);
+    padding: 0px;
+    margin: 0px 0px 15px 5px;
+    border-bottom: 3px solid rgb(74, 144, 189);
+    display: inline-block;
+}
+.infoSection p {
+    color: var(--boo-text-color);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.packageSummary {
+    display: flex;
+    flex-direction: column;
+    background: #f0f4f8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.packageSummaryImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.packageSummaryDetails {
+    text-align: left;
+    width: 100%;
+}
+
+.packageSummaryTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--boo-primary-color);
+    margin: 0;
+}
+
+.packageSummaryDuration {
+    font-size: 1rem;
+    color: var(--boo-text-color);
+    margin: 0.5rem 0 1rem 0;
+}
+
+.bookingCardLocations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.bookingCardLocationLink span {
+    background: var(--boo-secondary-color);
+    color: var(--boo-white-color);
+    padding: 4px 12px;
+    /* border-radius: 15px; */
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.priceDetails {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--boo-primary-color);
+    font-weight: 500;
+    background-color: #e6f0f7;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.priceDetails p:last-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formSection {
+    background: #f9fcff;
+    padding: 1.5rem;
+    border: 1px solid var(--boo-border-color);
+    border-radius: 10px;
+}
+
+.formSectionTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--boo-primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--boo-secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label, .formGroup legend {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup input[type="number"],
+.formGroup textarea,
+.formGroup select,
+.react-tel-input .form-control {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--boo-border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: var(--boo-input-bg-color);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    color: #333;
+    border: 1px solid #4a90bd;
+}
+
+.formGroup input:focus, 
+.formGroup textarea:focus, 
+.formGroup select:focus,
+.react-tel-input .form-control:focus {
+    outline: none;
+    border-color: var(--boo-secondary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 189, 0.2);
+}
+
+.react-tel-input .form-control {
+    height: auto;
+}
+
+.formGroup .react-datepicker-wrapper input {
+    width: 100%;
+}
+
+/* Placeholder Styling */
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #888;
+  opacity: 1; 
+}
+
+.formGroup input::-webkit-input-placeholder,
+.formGroup textarea::-webkit-input-placeholder {
+  color: #888;
+}
+
+.css-1jqq78o-placeholder{
+ font-size: 15px !important;
+}
+
+.profileImageGroup {
+    align-items: center;
+}
+
+.profileImagePreviewContainer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    border: 3px solid var(--boo-border-color);
+}
+.profileImagePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.genderOptions{
+    border: 1px solid #4a90bd;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.editButton {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #dfe2e4;
+    color: rgb(2, 2, 2);
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 13px;
+    border: 2px solid #fff;
+    
+}
+
+.optionsGroup label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.optionsGroup input[type="checkbox"] {
+  margin-right: 0.75rem;
+}
+
+.submitButton {
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--boo-primary-color) 0%, var(--boo-secondary-color) 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.errorMessage {
+  color: var(--boo-error-color);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .bookingContainer {
+        padding: 2rem;
+    }
+
+    .bookingH1Title {
+        font-size: 2.5rem;
+    }
+
+    .bookingH3Subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* .infoGrid {
+        grid-template-columns: repeat(3, 1fr);
+    } */
+
+    .packageSummary {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .packageSummaryImg {
+        width: 250px;
+        height: 100%;
+        max-height: 180px;
+    }
+
+    .formGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formGroup.fullWidth {
+        grid-column: span 2;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .formGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .formGroup.fullWidth {
+        grid-column: span 3;
+    }
+}
+
+.inputError input[type="text"],
+.inputError input[type="email"],
+.inputError input[type="number"],
+.inputError textarea,
+.inputError select {
+    border-color: var(--boo-error-color);
+}
+
+.inputError .react-tel-input .form-control,
+.inputError .react-datepicker-wrapper input {
+    border-color: var(--boo-error-color);
+}
+
+.inputError .react-tel-input .form-control:focus,
+.inputError .react-datepicker-wrapper input:focus {
+    border-color: var(--boo-error-color);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68,.2);
+}
+
+/* For react-select (CountrySelector) */
+.inputError div[class*="-control"] {
+    border-color: var(--boo-error-color) !important;
+    box-shadow: none; /* remove focus shadow if any */
+}
+
+.inputError div[class*="-control"]:hover {
+    border-color: var(--boo-error-color) !important;
+}

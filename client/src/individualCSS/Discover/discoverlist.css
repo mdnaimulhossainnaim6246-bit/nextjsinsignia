@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
+:root {
+ 
+  --primary-color: #0a0d14;
+  --primary-color-light: #20242f;
+  --primary-color-blue: #007bff;
+  --Font-Header-color: #333;
+  /* --primary-color-blue: #4825e6; */
+  --nav-color: #101520;
+  --nav-client-font-color: #666;
+  --secondary-color: #f49e09;
+  --moreone-color: #e55d11;
+  --extra-light: #ffffff80;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Lisu Bosa",  serif;
+}
+.section___container{
+  padding: 2rem 4rem;
+  margin: 0 !important;
+  background: #fff;
+}
+
+.discover___card-discover{
+   position: relative;
+   justify-content: center;
+    width:290px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    /* box-shadow: 1px 1px 15px rgba(0, 147, 245, 0.116); */
+    /* padding: 10px 20px 10px 20px; */
+    padding: 12px;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    z-index: -1;
+    
+}
+
+
+
+
+
+
+.discover___card-discover:hover {
+/* background-color: rgba(80, 158, 230, 0.096); */
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.116);
+}
+
+
+.discover___image{
+    position: relative;
+     height: 250px;
+    
+    
+}
+
+
+.rating___text{
+  z-index: 1;
+  position: relative;
+  top: -233px;
+  left: 8px;
+  display: flex;
+  
+}
+
+
+.Priority___Label {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 8px;
+  font-size: 15px;
+  color: var(--Font-Header-color);
+  
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+  backdrop-filter: blur(2px);
+  padding: 4px 10px;
+  border-radius: 40px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid white;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+/* Initially no animation */
+.Priority___Label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+  transition: none;
+  
+}
+
+
+.discover___card-discover:hover .Priority___Label{
+  background: linear-gradient(135deg, #b8cff1 0%, #f1f1f1 100%);
+  backdrop-filter: blur(2px);
+ border: 1px solid transparent;
+}
+.discover___card-discover:hover .Priority___Label::before {
+  animation: shineWave 1.8s infinite ease-in-out;
+  
+  z-index: 999;
+  
+}
+
+
+
+@keyframes shineWave {
+  0% {
+    transform: translateX(-100%);
+    
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+.discover__heart___icon {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 8px;
+  font-size: 30px;
+  color: white;
+  white-space: nowrap;
+  z-index: 1;
+  right: 10px;
+  
+ 
+
+
+
+  
+  
+}
+
+.heart___svg{
+  position: absolute;
+  width: 35px;
+  height: 37px;
+  fill: rgba(0, 0, 0, 0.332);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+   z-index: 1;
+  right: 12px;
+  margin-right: 11px;
+  top: -5px;
+  transition: 0.4s;
+}
+
+.discover___card-discover:hover .heart___svg {
+  fill: rgba(0, 0, 0, 0.432);
+}
+
+
+/* .discover___img___fit__div{
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+ */
+
+
+.discover___image___container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 0px;
+  /* box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 -4px 8px rgba(0, 0, 0, 0.3); */
+  background: #fff; 
+   height: 250px !important;
+}
+
+
+.discover___img___fit{
+    
+    
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+     overflow: hidden;
+     transition: 0.4s ease;
+}
+
+
+.discover___card-discover:hover .img__shadow__overlay{
+background-image:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)) ;
+}
+
+
+.img__shadow__overlay {
+  position: absolute;
+  inset: 0;
+  font-family: "Lisu Bosa";
+  /* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1); */
+  border-radius: 20px;
+  pointer-events: none;
+  background: transparent;
+  transition: 0.4s;
+}
+
+.img__shadow__overlay h3 {
+  width: 100%;
+  font-weight: 500;
+  font-family: "Lisu Bosa";
+  color: white;
+  font-size: 28px;
+  bottom: 0;
+  /* left:50%; */
+  transform: translateX(38%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.discover___card-discover:hover .img__shadow__overlay h3 {
+  opacity: 1;
+  bottom: 30%;
+}
+
+/* 
+.discover___image::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, var(--primary-color), transparent);
+ 
+}  */
+
+
+ .discover___card-content{
+  padding: 0 0.2rem;
+  /* transform: translateY(-85px); */
+  top: 350px;
+
+ }
+
+
+.discover___card-content p {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--nav-client-font-color);
+  font-size: small;
+  padding-left: 2px;
+  
+}
+
+.discover-category{
+    margin: 4px 0;
+    color: var(--primary-color-blue) !important;
+    align-items: center;
+  
+    display: flex;
+    padding: 2px 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: "poppins";
+    background: #007bff2a;
+    width: fit-content;
+    border-radius:0 10px 0 10px;
+}
+
+
+
+.discover__arrow__button{
+color: var(--primary-color-blue);
+height: 30px;
+width: 30px;
+border-radius: 50px;
+border: 1px solid var(--primary-color-blue);
+/* margin: 10px 0 5px 0; */
+background: none;
+transform: rotate(-45deg);
+cursor: pointer;
+transition: 0.3s ease;
+
+}
+
+
+.discover___card-discover:hover .discover__arrow__button{
+color:#fff;
+background: var(--primary-color-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1072px) {
+
+
+  .section___container{
+  padding: 2rem 4rem !important;
+}
+  .discover___card{
+    width:220px !important;
+    padding: 7px !important;
+}
+
+.discover___grid{
+  padding: 0;
+}
+  .discover___card-discover{
+    width:220px !important;
+    padding: 7px !important;
+}
+
+.discover___image{
+    position: relative;
+     height: 190px !important;
+}
+
+.discover___image___container {
+  height: 190px !important;
+  
+}
+
+
+.discover___img___fit{
+    height: 190px !important;
+   
+}
+
+
+
+.rating___text{
+  top: -175px !important;
+  
+}
+
+
+
+
+
+.Priority___Label {
+  font-size: 12px !important;
+
+}
+
+
+
+
+
+.heart___svg{
+  width: 30px !important;
+  height: 30px !important;
+  top: -3px !important;
+}
+
+
+
+
+
+
+.img__shadow__overlay h3 {
+  
+  font-size: 25px !important;
+}
+
+.discover___card:hover .img__shadow__overlay h3 {
+  bottom: 25% !important;
+}
+
+
+
+.discover___card-content h4 {
+  font-size: 19px !important;
+  
+}
+
+.discover-category{
+    padding: 2px 6px;
+    font-size: 0.7rem !important;
+}
+
+
+
+.discover__arrow__button{
+  height: 27px !important;
+  width: 27px !important;
+  margin: 5px 0 1px 0 !important;
+}
+
+}
+
+
+
+@media (max-width: 950px) {
+  .section___container{
+    padding: 2rem 2rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .section___container{
+  /* padding: 5rem 1rem 10rem 1rem !important; */
+  padding: 2rem 2rem;
+}
+  .discover___card-discover{
+    width:220px !important;
+    padding: 7px !important;
+}
+
+.discover___image{
+    position: relative;
+     height: 190px !important;
+}
+
+.discover___image___container {
+  height: 190px !important;
+  
+}
+
+
+.discover___img___fit{
+    height: 190px !important;
+   
+}
+
+
+
+.rating___text{
+  top: -175px !important;
+  
+}
+
+
+
+
+
+.Priority___Label {
+  font-size: 12px !important;
+
+}
+
+
+
+
+
+.heart___svg{
+  width: 30px !important;
+  height: 30px !important;
+  top: -3px !important;
+}
+
+
+
+
+
+
+.img__shadow__overlay h3 {
+  
+  font-size: 25px !important;
+}
+
+.discover___card:hover .img__shadow__overlay h3 {
+  bottom: 25% !important;
+}
+
+
+
+.discover___card-content h4 {
+  font-size: 19px !important;
+  
+}
+
+.discover-category{
+    padding: 2px 6px;
+    font-size: 0.7rem !important;
+}
+
+
+
+.discover__arrow__button{
+  height: 27px !important;
+  width: 27px !important;
+  margin: 5px 0 1px 0 !important;
+}
+
+}
+
+@media (max-width: 490px) {
+
+  .section___container{
+  /* padding: 5rem 0.4rem 10rem 0.4rem !important; */
+  padding: 2rem 2rem;
+}
+  .discover___card-discover{
+    width:180px !important;
+    padding: 7px !important;
+}
+
+.discover___image{
+    position: relative;
+     height: 150px !important;
+}
+
+.discover___image___container {
+  height: 150px !important;
+  
+}
+
+
+.discover___img___fit{
+    height: 150px !important;
+   
+}
+
+
+
+.rating___text{
+  top: -142px !important;
+  
+}
+
+
+
+
+
+.Priority___Label {
+  font-size: 11px !important;
+  padding: 2px 8px;
+
+}
+
+
+
+
+
+.heart___svg{
+  width: 28px !important;
+  height: 28px !important;
+  top: -3px !important;
+  display: none;
+}
+
+
+
+
+
+.img__shadow__overlay h3 {
+  
+  font-size: 25px !important;
+}
+
+.discover___card:hover .img__shadow__overlay h3 {
+  bottom: 25% !important;
+}
+
+
+
+.discover___card-content h4 {
+  font-size: 19px !important;
+  
+}
+
+.discover-category{
+    padding: 2px 6px;
+    font-size: 0.7rem !important;
+}
+
+
+
+.discover__arrow__button{
+  height: 27px !important;
+  width: 27px !important;
+  margin: 5px 0 1px 0 !important;
+}
+
+}
