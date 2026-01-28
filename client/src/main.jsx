@@ -18,37 +18,39 @@
 // )
 
 
-// import { createRoot } from 'react-dom/client';
-// import "@fortawesome/fontawesome-free/css/all.min.css";
-// import './index.css';
-// import App from './App.jsx';
-// import { BrowserRouter } from 'react-router-dom';
-// import { AppProvider } from './context/AppContext';
-// import { HelmetProvider } from 'react-helmet-async';  // ✅ add this
-
-// createRoot(document.getElementById('root')).render(
-//   <BrowserRouter>
-//     <AppProvider>
-//       <HelmetProvider>  {/* ✅ wrap App with HelmetProvider */}
-//         <App />
-//       </HelmetProvider>
-//     </AppProvider>
-//   </BrowserRouter>,
-// );
 import { createRoot } from 'react-dom/client';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './index.css';
 import App from './App.jsx';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';  // ✅ add this
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <BrowserRouter>
     <AppProvider>
-      <HelmetProvider>
+      <HelmetProvider>  {/* ✅ wrap App with HelmetProvider */}
         <App />
       </HelmetProvider>
     </AppProvider>
-  </HashRouter>,
+  </BrowserRouter>,
 );
+
+
+// import { createRoot } from 'react-dom/client';
+// import "@fortawesome/fontawesome-free/css/all.min.css";
+// import './index.css';
+// import App from './App.jsx';
+// import { HashRouter } from 'react-router-dom';
+// import { AppProvider } from './context/AppContext';
+// import { HelmetProvider } from 'react-helmet-async';
+
+// createRoot(document.getElementById('root')).render(
+//   <HashRouter>
+//     <AppProvider>
+//       <HelmetProvider>
+//         <App />
+//       </HelmetProvider>
+//     </AppProvider>
+//   </HashRouter>,
+// );
